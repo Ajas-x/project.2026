@@ -14,3 +14,7 @@
     
 // }
 // sampleFunction();
+let totalMarks =100;
+function markCalculater() {
+    
+}
