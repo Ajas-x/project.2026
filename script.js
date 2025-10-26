@@ -13,8 +13,6 @@
 //     }
 
 // }
-<<<<<<< HEAD
-=======
 // sampleFunction();
 let totalMarks = 10;
 markCalculater();
@@ -29,4 +27,3 @@ function markCalculater() {
         console.log("Grade A");
     }
 }
->>>>>>> d2a28b56bcb7ac055a69ce7c0597295d440887be
