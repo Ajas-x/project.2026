@@ -30,4 +30,3 @@
 // }
 
 //Loop's in JavaScript
-for(let i=)
