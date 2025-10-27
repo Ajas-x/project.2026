@@ -57,5 +57,9 @@
 //array in javascript 
 let fruits = ["Apple","Banana","Mango","Orange"];
 console.log(fruits[1]);
+fruits.push('Grapres');
+console.log(fruits);
+fruits.pop();
+console.log(fruits);
 
 
