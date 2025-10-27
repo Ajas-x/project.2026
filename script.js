@@ -37,9 +37,20 @@
 //Loop to print odd numbers between 1 to 20
 for (let i = 1; i <= 20; i++) {
     if (i % 2 !== 0) {
-        console.log("this is odd number:",i);
+        console.log("this is odd number:", i);
     }
     else {
         console.log("This is even number:", i);
     }
+}
+// while loop in java script 
+let i = 1;
+while (i <= 10) {
+    if (i % 2 == 0) {
+        console.log("even number:", i);
+    }
+    else {
+        console.log("odd number:", i);
+    }
+    i++;    
 }
