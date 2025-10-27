@@ -18,7 +18,7 @@
 // let totalMarks = 10;
 // markCalculater();
 // function markCalculater() {
-//     if (totalMarks <= 25) { 
+//     if (totalMarks <= 25) {
 //         console.log("Grade D");
 //     } else if (totalMarks <= 50) {
 //         console.log("Grade C");
@@ -30,4 +30,6 @@
 // }
 
 //Loop's in JavaScript
-
+for (let i = 5; i <= 10; i = i * 1) {
+    console.log("valu of i:", i);
+}
