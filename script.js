@@ -13,22 +13,6 @@
 //     }
 
 // }
-<<<<<<< HEAD
-// sampleFunction();
-let totalMarks = 10;
-markCalculater();
-function markCalculater() {
-    if (totalMarks <= 25) {
-        console.log("Grade D");
-    } else if (totalMarks <= 50) {
-        console.log("Grade C");
-    } else if (totalMarks <= 75) {
-        console.log("Grade B");
-    } else {
-        console.log("Grade A");
-    }
-}
-=======
 
 // sampleFunction();
 // let totalMarks = 10;
@@ -46,4 +30,4 @@ function markCalculater() {
 // }
 
 //Loop's in JavaScript
->>>>>>> 4393ec77b264439e21abb2d42bdbffb312e74b06
+
