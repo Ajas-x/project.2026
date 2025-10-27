@@ -52,5 +52,5 @@ while (i <= 10) {
     else {
         console.log("odd number:", i);
     }
-    i++;    
+    i++;  
 }
