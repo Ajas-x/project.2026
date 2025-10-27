@@ -35,20 +35,55 @@
 
 // }
 //Loop to print odd numbers between 1 to 20
-for (let i = 1; i <= 20; i++) {
-    if (i % 2 !== 0) {
-        console.log("this is odd number:", i);
-    } else {
-        console.log("This is even number:", i);
-    }
-}
+
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 2 !== 0) {
+//         console.log("this is odd number:", i);
+//     } else {
+//         console.log("This is even number:", i);
+//     }
+// }
 // while loop in java script
-let i = 1;
-while (i <= 10) {
-    if (i % 2 == 0) {
-        console.log("even number:", i);
-    } else {
-        console.log("odd number:", i);
-    }
-    i++;
+// let i = 1;
+// while (i <= 10) {
+//     if (i % 2 == 0) {
+//         console.log("even number:", i);
+//     } else {
+//         console.log("odd number:", i);
+//     }
+//     i++;
+
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 2 !== 0) {
+//         console.log("this is odd number:", i);
+//     }
+//     else {
+//         console.log("This is even number:", i);
+//     }
+// }
+// while loop in java script
+// let i = 1;
+// while (i <= 10) {
+//     if (i % 2 == 0) {
+//         console.log("even number:", i);
+//     }
+//     else {
+//         console.log("odd number:", i);
+//     }
+//     i++;
+// }
+//array in javascript
+// let fruits = ["Apple","Banana","Mango","Orange"];
+// console.log(fruits[1]);
+// fruits.push('Grapres');
+// console.log(fruits);
+// fruits.pop();
+// console.log(fruits);
+//Functions in javaScript
+document.getElementById("demo").innerHTML = greetUser("Ajas");
+function greetUser(name) {
+    let massage = "Hello " + name + "👋" + ",welcome to JavaScript programming!";
+    return massage;
 }
+greetUser("Ajas");
+// }
