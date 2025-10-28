@@ -76,14 +76,36 @@
 // let fruits = ["Apple","Banana","Mango","Orange"];
 // console.log(fruits[1]);
 // fruits.push('Grapres');
-// console.log(fruits);
+// console.log(fruits);"
 // fruits.pop();
 // console.log(fruits);
 //Functions in javaScript
-document.getElementById("demo").innerHTML = greetUser("Ajas");
-function greetUser(name) {
-    let massage = "Hello " + name + "👋" + ",welcome to JavaScript programming!";
-    return massage;
-}
-greetUser("Ajas");
+// document.getElementById("demo").innerHTML = greetUser("Ajas");
+// function greetUser(name) {
+//     let massage = "Hello " + name + "👋" + ",welcome to JavaScript programming!";
+//     return massage;
 // }
+// greetUser("Ajas");
+// }
+//function sample function
+function sampleMarkCalculater(mark) {
+    if (mark >= 90) {
+        console.log("Grade A+");
+
+    } else if (mark >= 80) {
+        return "Grade A";
+
+    } else if (mark >= 70) {
+        return "Grade B";
+
+    } else if (mark >= 60) {
+        return "Grade C";
+    } else if (mark >= 50) {
+        return "Grade D";
+    } else {
+        return "Failed";
+    }
+}
+let mark = 50;
+let result = sampleMarkCalculater(mark);
+console.log("mark:", mark, "Grade:", result);
