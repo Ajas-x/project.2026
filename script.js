@@ -88,24 +88,57 @@
 // greetUser("Ajas");
 // }
 //function sample function
-function sampleMarkCalculater(mark) {
-    if (mark >= 90) {
-        console.log("Grade A+");
+// function sampleMarkCalculater(mark) {
+//     if (mark >= 90) {
+//         console.log("Grade A+");
 
-    } else if (mark >= 80) {
-        return "Grade A";
+//     } else if (mark >= 80) {
+//         return "Grade A";
 
-    } else if (mark >= 70) {
-        return "Grade B";
+//     } else if (mark >= 70) {
+//         return "Grade B";
 
-    } else if (mark >= 60) {
-        return "Grade C";
-    } else if (mark >= 50) {
-        return "Grade D";
-    } else {
-        return "Failed";
+//     } else if (mark >= 60) {
+//         return "Grade C";
+//     } else if (mark >= 50) {
+//         return "Grade D";
+//     } else {
+//         return "Failed";
+//     }
+// }
+// let mark = 50;
+// let result = sampleMarkCalculater(mark);
+// console.log("mark:", mark, "Grade:", result);
+//OOPS consept 
+//class and object//
+class mobile {
+    constructor(brand, price) {
+        this.brand = brand;
+        this.price = price;
+    }
+    showDetails() {
+
+        console.log("brand:", this.brand, "Price:", this.price);
     }
 }
-let mark = 50;
-let result = sampleMarkCalculater(mark);
-console.log("mark:", mark, "Grade:", result);
+let mobile1 = new mobile("Samsung", 150000);
+let mobile2 = new mobile("Vivo", 40000);
+mobile1.showDetails();
+mobile2.showDetails();
+
+class Student {
+    constructor(name, rollNo, marks) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.marks = marks;
+    }
+    studentDetails() {
+        console.log('name:', this.name);
+        console.log("rollNo:", this.rollNo);
+        console.log("marks:", this.marks);
+        console.log("..................................");
+
+    }
+}
+let s1 = new Student("Ajas", 2, [30, 34, 43]);
+s1.studentDetails();
