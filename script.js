@@ -133,12 +133,25 @@ class Student {
         this.marks = marks;
     }
     studentDetails() {
+        let total = 0;
+        for (let mark of this.marks) {
+            total += mark;
+        }
         console.log('name:', this.name);
         console.log("rollNo:", this.rollNo);
         console.log("marks:", this.marks);
+        console.log("total:", total);
         console.log("..................................");
+
+
+
+
 
     }
 }
 let s1 = new Student("Ajas", 2, [30, 34, 43]);
+let s2 = new Student("Ajnas", 33, [75, 78, 60]);
 s1.studentDetails();
+s2.studentDetails();
+
+
