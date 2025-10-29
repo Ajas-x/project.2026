@@ -153,5 +153,35 @@ let s1 = new Student("Ajas", 2, [30, 34, 43]);
 let s2 = new Student("Ajnas", 33, [75, 78, 60]);
 s1.studentDetails();
 s2.studentDetails();
+//inheritence in java script//
+class School {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+
+    }
+    displayDetails() {
+        console.log("name: ", this.name);
+        console.log("age: ", this.age);
+    }
+}
+
+let student1 = new School("Ajas", 21);
+student1.displayDetails();
+class School extends Student {
+    constructor(std) {
+        super(this.name, this.age);
+        this.std = std;
+    }
+
+    printStudentDetails() {
+        console.log("name: ", this.name);
+        console.log("std: ", this.std);
+        console.log("............................")
+    }
+}
+let student2 =new Student("Ajnas",3,"12th");
+student2.printStudentDetails();
+student2.displayDetails();
 
 
