@@ -111,77 +111,68 @@
 // console.log("mark:", mark, "Grade:", result);
 //OOPS consept 
 //class and object//
-class mobile {
-    constructor(brand, price) {
-        this.brand = brand;
-        this.price = price;
-    }
-    showDetails() {
+// class mobile {
+//     constructor(brand, price) {
+//         this.brand = brand;
+//         this.price = price;
+//     }
+//     showDetails() {
 
-        console.log("brand:", this.brand, "Price:", this.price);
-    }
-}
-let mobile1 = new mobile("Samsung", 150000);
-let mobile2 = new mobile("Vivo", 40000);
-mobile1.showDetails();
-mobile2.showDetails();
+//         console.log("brand:", this.brand, "Price:", this.price);
+//     }
+// }
+// let mobile1 = new mobile("Samsung", 150000);
+// let mobile2 = new mobile("Vivo", 40000);
+// mobile1.showDetails();
+// mobile2.showDetails();
 
-class Student {
-    constructor(name, rollNo, marks) {
-        this.name = name;
-        this.rollNo = rollNo;
-        this.marks = marks;
-    }
-    studentDetails() {
-        let total = 0;
-        for (let mark of this.marks) {
-            total += mark;
-        }
-        console.log('name:', this.name);
-        console.log("rollNo:", this.rollNo);
-        console.log("marks:", this.marks);
-        console.log("total:", total);
-        console.log("..................................");
-
-
+// class Student {
+//     constructor(name, rollNo, marks) {
+//         this.name = name;
+//         this.rollNo = rollNo;
+//         this.marks = marks;
+//     }
+//     studentDetails() {
+//         let total = 0;
+//         for (let mark of this.marks) {
+//             total += mark;
+//         }
+//         console.log('name:', this.name);
+//         console.log("rollNo:", this.rollNo);
+//         console.log("marks:", this.marks);
+//         console.log("total:", total);
+//         console.log("..................................");
 
 
 
-    }
-}
-let s1 = new Student("Ajas", 2, [30, 34, 43]);
-let s2 = new Student("Ajnas", 33, [75, 78, 60]);
-s1.studentDetails();
-s2.studentDetails();
+
+
+//     }
+// }
+// let s1 = new Student("Ajas", 2, [30, 34, 43]);
+// let s2 = new Student("Ajnas", 33, [75, 78, 60]);
+// s1.studentDetails();
+// s2.studentDetails();
 //inheritence in java script//
-class School {
-    constructor(name, age) {
+class Brand {
+    constructor(name, engin) {
         this.name = name;
-        this.age = age;
-
+        this.engin = engin;
     }
-    displayDetails() {
-        console.log("name: ", this.name);
-        console.log("age: ", this.age);
-    }
-}
-
-let student1 = new School("Ajas", 21);
-student1.displayDetails();
-class School extends Student {
-    constructor(std) {
-        super(this.name, this.age);
-        this.std = std;
-    }
-
-    printStudentDetails() {
-        console.log("name: ", this.name);
-        console.log("std: ", this.std);
-        console.log("............................")
+    printDetails() {
+        console.log("name:", this.name);
+        console.log("age: ", this.engin);
     }
 }
-let student2 =new Student("Ajnas",3,"12th");
-student2.printStudentDetails();
-student2.displayDetails();
-
-
+class Car extends Brand {
+    constructor(name, engin, fuelType) {
+        super(engin, name);
+        this.fuelType = fuelType;
+    }
+    consoleCarDetails() {
+        console.log("fuelType:", this.fuelType);
+    }
+}
+let stu1 = new Car("Toyota","2.5 ltter turbo charged inline 4 cylinder engine","Disal");
+stu1.printDetails();
+stu1.consoleCarDetails();
