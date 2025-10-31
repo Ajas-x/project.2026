@@ -154,25 +154,38 @@
 // s1.studentDetails();
 // s2.studentDetails();
 //inheritence in java script//
-class Brand {
-    constructor(name, engin) {
-        this.name = name;
-        this.engin = engin;
+// class Brand {
+//     constructor(name, engin) {
+//         this.name = name;
+//         this.engin = engin;
+//     }
+//     printDetails() {
+//         console.log("name:", this.name);
+//         console.log("age: ", this.engin);
+//     }
+// }
+// class Car extends Brand {
+//     constructor(name, engin, fuelType) {
+//         super(engin, name);
+//         this.fuelType = fuelType;
+//     }
+//     consoleCarDetails() {
+//         console.log("fuelType:", this.fuelType);
+//     }
+// }
+// let stu1 = new Car("Toyota","2.5 ltter turbo charged inline 4 cylinder engine","Disal");
+// stu1.printDetails();
+// stu1.consoleCarDetails();
+class Check{
+    constructor(name){
+        this.button = document.createElement('button');
+        this.button.innerHTML=name;
+        document.body.appendChild(this.button);
     }
-    printDetails() {
-        console.log("name:", this.name);
-        console.log("age: ", this.engin);
+    setwidth(width){
+        this.button.style.width=width +"px";    
     }
-}
-class Car extends Brand {
-    constructor(name, engin, fuelType) {
-        super(engin, name);
-        this.fuelType = fuelType;
-    }
-    consoleCarDetails() {
-        console.log("fuelType:", this.fuelType);
-    }
-}
-let stu1 = new Car("Toyota","2.5 ltter turbo charged inline 4 cylinder engine","Disal");
-stu1.printDetails();
-stu1.consoleCarDetails();
+};
+
+let s1 =new Check("click me");
+s1.setwidth(200);
