@@ -161,7 +161,7 @@
 //     }
 //     printDetails() {
 //         console.log("name:", this.name);
-//         console.log("age: ", this.engin);
+//  3       console.log("age: ", this.engin);
 //     }
 // }
 // class Car extends Brand {
@@ -176,16 +176,30 @@
 // let stu1 = new Car("Toyota","2.5 ltter turbo charged inline 4 cylinder engine","Disal");
 // stu1.printDetails();
 // stu1.consoleCarDetails();
-class Check{
-    constructor(name){
-        this.button = document.createElement('button');
-        this.button.innerHTML=name;
-        document.body.appendChild(this.button);
+class Amina {
+    #name;
+    constructor(age, name) {
+        this.#name;
+        this.age = age;
+        this.us = document.createElement("h1");
+        this.us.innerHTML = name;
+        this.us.style.fontSize = "60px";
+        document.body.appendChild(this.us);
     }
-    setwidth(width){
-        this.button.style.width=width +"px";    
-    }
-};
 
-let s1 =new Check("click me");
-s1.setwidth(200);
+    setname(name) {
+        this.#name = name;
+        this.us.innerHTML = name;
+    }
+    getname() {
+
+        return this.#name;
+
+    }
+
+}
+
+let user1 = new Amina(23, "Ajas");
+user1.setname("Amina");
+console.log(user1.getname());
+
