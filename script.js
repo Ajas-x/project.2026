@@ -109,7 +109,7 @@
 // let mark = 50;
 // let result = sampleMarkCalculater(mark);
 // console.log("mark:", mark, "Grade:", result);
-//OOPS consept 
+//OOPS consept
 //class and object//
 // class mobile {
 //     constructor(brand, price) {
@@ -143,10 +143,6 @@
 //         console.log("total:", total);
 //         console.log("..................................");
 
-
-
-
-
 //     }
 // }
 // let s1 = new Student("Ajas", 2, [30, 34, 43]);
@@ -156,36 +152,46 @@
 //inheritence in java script//
 // class Brand {
 //     constructor(name, engin) {
-//         this.name = name;
-//         this.engin = engin;
-//     }
-//     printDetails() {
-//         console.log("name:", this.name);
-//         console.log("age: ", this.engin);
-//     }
-// }
-// class Car extends Brand {
-//     constructor(name, engin, fuelType) {
-//         super(engin, name);
-//         this.fuelType = fuelType;
-//     }
-//     consoleCarDetails() {
-//         console.log("fuelType:", this.fuelType);
-//     }
-// }
-// let stu1 = new Car("Toyota","2.5 ltter turbo charged inline 4 cylinder engine","Disal");
-// stu1.printDetails();
-// stu1.consoleCarDetails();
-class Check{
-    constructor(name){
-        this.button = document.createElement('button');
-        this.button.innerHTML=name;
-        document.body.appendChild(this.button);
-    }
-    setwidth(width){
-        this.button.style.width=width +"px";    
-    }
-};
 
-let s1 =new Check("click me");
-s1.setwidth(200);
+//Encapsulation//
+// class UserPass {
+//     #name;
+//     #password;
+//     constructor(name, pass) {
+//         this.#name = name;
+//         this.#password = pass;
+//     }
+//     setItem(name, pass) {
+//         this.#name = name;
+//         this.#password = pass;
+//     }
+//     getItem() {
+//         return { name: this.#name, password: this.#password };
+//     }
+// }
+// let user1 = new UserPass();
+// user1.setItem("Ajas", "Muhammed#$#4");
+// console.log(user1.getItem());
+class Account{
+  #balance;
+  constructor(amount){
+    this.#balance=amount;
+  }
+  setAmount(amount){
+    this.#balance+=amount;
+  }
+  withdraw(amount){
+    if(amount<=this.#balance){
+      this.#balance-=amount;
+    }else{
+      console.log("insufficient balance");
+    }
+  }
+  getAmount(){
+    return this.#balance;
+  }
+  }
+  let user1 = new Account(5000);
+  user1.setAmount(500);
+  user1.withdraw(300);
+  console.log(user1.getAmount());
