@@ -176,30 +176,61 @@
 // let stu1 = new Car("Toyota","2.5 ltter turbo charged inline 4 cylinder engine","Disal");
 // stu1.printDetails();
 // stu1.consoleCarDetails();
-class Amina {
+// class Amina {
+//     #name;
+//     constructor(age, name) {
+//         this.#name;
+//         this.age = age;
+//         this.us = document.createElement("h1");
+//         this.us.innerHTML = name;
+//         this.us.style.fontSize = "60px";
+//         document.body.appendChild(this.us);
+//     }
+
+//     setname(name) {
+//         this.#name = name;
+//         this.us.innerHTML = name;
+//     }
+//     getname() {
+
+//         return this.#name;
+
+//     }
+
+// }
+
+// let user1 = new Amina(23, "Ajas");
+// user1.setname("Amina");
+// console.log(user1.getname());
+class Ajas {
     #name;
+
+
     constructor(age, name) {
         this.#name;
         this.age = age;
-        this.us = document.createElement("h1");
-        this.us.innerHTML = name;
-        this.us.style.fontSize = "60px";
-        document.body.appendChild(this.us);
+        this.u1 = document.createElement("h1");
+        this.u1.innerHTML = name;
+        document.body.appendChild(this.u1);
+    }
+    constructor(age) {
+        this.age = age;
+        this.u2 = document.createElement("h1");
+        this.u2.innerHTML = age;
+        document.body.appendChild(this.age);
     }
 
-    setname(name) {
+    setvalue(name, age) {
         this.#name = name;
-        this.us.innerHTML = name;
+        this.u1.innerHTML = name;
+        console.log(age);
     }
-    getname() {
 
+    getvalue() {
         return this.#name;
-
     }
-
 }
 
-let user1 = new Amina(23, "Ajas");
-user1.setname("Amina");
-console.log(user1.getname());
-
+let user1 = new Ajas();
+user1.setvalue("Tharajith", 36);
+console.log(user1.getvalue());
