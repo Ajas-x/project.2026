@@ -109,7 +109,7 @@
 // let mark = 50;
 // let result = sampleMarkCalculater(mark);
 // console.log("mark:", mark, "Grade:", result);
-//OOPS consept 
+//OOPS consept
 //class and object//
 // class mobile {
 //     constructor(brand, price) {
@@ -142,10 +142,6 @@
 //         console.log("marks:", this.marks);
 //         console.log("total:", total);
 //         console.log("..................................");
-
-
-
-
 
 //     }
 // }
@@ -202,35 +198,103 @@
 // let user1 = new Amina(23, "Ajas");
 // user1.setname("Amina");
 // console.log(user1.getname());
-class Ajas {
-    #name;
+// class Ajas {
+//     #name;
 
 
-    constructor(age, name) {
-        this.#name;
-        this.age = age;
-        this.u1 = document.createElement("h1");
-        this.u1.innerHTML = name;
-        document.body.appendChild(this.u1);
-    }
-    constructor(age) {
-        this.age = age;
-        this.u2 = document.createElement("h1");
-        this.u2.innerHTML = age;
-        document.body.appendChild(this.age);
-    }
+//     constructor(age, name) {
+//         this.#name;
+//         this.age = age;
+//         this.u1 = document.createElement("h1");
+//         this.u1.innerHTML = name;
+//         document.body.appendChild(this.u1);
+//     }
+//     constructor(age) {
+//         this.age = age;
+//         this.u2 = document.createElement("h1");
+//         this.u2.innerHTML = age;
+//         document.body.appendChild(this.age);
+//     }
 
-    setvalue(name, age) {
-        this.#name = name;
-        this.u1.innerHTML = name;
-        console.log(age);
-    }
+//     setvalue(name, age) {
+//         this.#name = name;
+//         this.u1.innerHTML = name;
+//         console.log(age);
+//     }
 
-    getvalue() {
-        return this.#name;
+//     getvalue() {
+//         return this.#name;
+//     }
+// }
+
+// let user1 = new Ajas();
+// user1.setvalue("Tharajith", 36);
+// console.log(user1.getvalue());
+
+
+//Encapsulation//
+// class UserPass {
+//     #name;
+//     #password;
+//     constructor(name, pass) {
+//         this.#name = name;
+//         this.#password = pass;
+//     }
+//     setItem(name, pass) {
+//         this.#name = name;
+//         this.#password = pass;
+//     }
+//     getItem() {
+//         return { name: this.#name, password: this.#password };
+//     }
+// }
+// let user1 = new UserPass();
+// user1.setItem("Ajas", "Muhammed#$#4");
+// console.log(user1.getItem());
+// class Account{
+//   #balance;
+//   constructor(amount){
+//     this.#balance=amount;
+//   }
+//   setAmount(amount){
+//     this.#balance+=amount;
+//   }
+//   withdraw(amount){
+// sound(){
+// console.log("some sound....");
+// }    if(amount<=this.#balance){
+//       this.#balance-=amount;
+
+    //     }else{
+//       console.log("insufficient balance");
+//     }
+//   }
+//   getAmount(){
+//     return this.#balance;
+//   }
+//   }
+//   let user1 = new Account(5000);
+//   user1.setAmount(500);
+//   user1.withdraw(300);
+//   console.log(user1.getAmount());
+///polymorphism///
+class Animal {
+    sound() {
+        console.log("Some sound...");
     }
 }
+class Dog extends Animal{
+    sound(){
+        console.log("this is sound");
+    }
+}
+class Cat extends Animal{
+    sound(){
+        console.log("this is cat sound");
+    }
+}
+let a1 =new Dog();
+let a2 =new Cat();
 
-let user1 = new Ajas();
-user1.setvalue("Tharajith", 36);
-console.log(user1.getvalue());
+a1.sound();
+a2.sound(); 
