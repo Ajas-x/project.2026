@@ -292,7 +292,7 @@ class Cat extends Animal{
     sound(){
         console.log("this is cat sound");
     }
-}
+} 
 let a1 =new Dog();
 let a2 =new Cat();
 
