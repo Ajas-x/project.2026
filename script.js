@@ -265,7 +265,7 @@
 // }    if(amount<=this.#balance){
 //       this.#balance-=amount;
 
-    //     }else{
+//     }else{
 //       console.log("insufficient balance");
 //     }
 //   }
@@ -278,23 +278,56 @@
 //   user1.withdraw(300);
 //   console.log(user1.getAmount());
 ///polymorphism///
-class Animal {
-    sound() {
-        console.log("Some sound...");
-    }
-}
-class Dog extends Animal{
-    sound(){
-        console.log("this is sound");
-    }
-}
-class Cat extends Animal{
-    sound(){
-        console.log("this is cat sound");
-    }
-} 
-let a1 =new Dog();
-let a2 =new Cat();
+// class Animal {
+//     sound() {
+//         console.log("Some sound...");
+//     }
+// }
+// class Dog extends Animal{
+//     sound(){
+//         console.log("this is sound");
+//     }
+// }
+// class Cat extends Animal{
+//     sound(){
+//         console.log("this is cat sound");
+//     }
+// } 
+// let a1 =new Dog();
+// let a2 =new Cat();
 
-a1.sound();
-a2.sound(); 
+// a1.sound();
+// a2.sound(); 
+
+// class Companies {
+//     subBrands() {
+//         console.log("Display brand's");
+//     }
+// }
+// class Google extends Companies {
+//     subBrands() {
+//         console.log("Android");
+//     }
+// }
+// class Microsoft extends Companies {
+//     subBrands() {
+//         console.log("Git Hub");
+//         console.log("Bing");
+//     }
+// }
+// class Oracle extends Companies {
+//     subBrands() {
+//         console.log("Oracle....")
+//         console.log("Siebel Systems");
+//     }
+
+// }
+// let user0 = new Companies();
+// let user1 = new Google();
+// let user2 = new Microsoft();
+// let user3 = new Oracle();
+
+// user0.subBrands();
+// user1.subBrands();
+// user2.subBrands();
+// user3.subBrands();
