@@ -331,3 +331,26 @@
 // user1.subBrands();
 // user2.subBrands();
 // user3.subBrands();
+// Abstraction//
+// class PaymentSystem {
+//     #balence;
+//     constructor(balance) {
+//         this.#balence = balance;
+//     }
+//     makePayment(amount) {
+//         if (amount <= this.#balence) {
+//             console.log("Processing payment of ₹" + amount + "...");
+//             this.#balence -= amount;
+//             console.log("Payment successfull");
+//         } else {
+//             console.log("insufficient balence");
+//         }
+//     }
+//     getBalence() {
+//         console.log("remining balance:", this.#balence);
+//         return this.#balence;
+//     }
+// }
+// let user1 = new PaymentSystem(100);
+// user1.makePayment(300);
+// user1.getBalence();
