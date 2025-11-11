@@ -390,35 +390,51 @@
 // user1.withdraw(1000);
 // user1.getBalance();
 // second project
-class StudentDetails {
-    constructor(name, rollNo, marks) {
-        this.name = name;
-        this.rollNo = rollNo;
-        this.marks = marks;
-    }
+// class StudentDetails {
+//     constructor(name, rollNo, marks) {
+//         this.name = name;
+//         this.rollNo = rollNo;
+//         this.marks = marks;
+//     }
 
-    displayStudent() {
-        console.log(this.name);
-        console.log(this.rollNo);
-        console.log(this.marks);
-        let total = 0;
-        for (let i = 0; i < this.marks.length; i++) {
-            total += this.marks[i];
-        }
-        console.log(total);
-    }
-}
-let student1 = new StudentDetails("Ajas", 3, [23, 32, 23]);
-let student2 = new StudentDetails("Ajnas", 6, [23, 62, 23]);
-let student3 = new StudentDetails("Afnas", 9, [23, 42, 23]);
-let student4 = new StudentDetails("Anfas", 12, [23, 42, 23]);
+//     displayStudent() {
+//         console.log(this.name);
+//         console.log(this.rollNo);
+//         console.log(this.marks);
+//         let total = 0;
+//         for (let i = 0; i < this.marks.length; i++) {
+//             total += this.marks[i];
+//         }
+//         console.log(total);
+//     }
+// }
+// let student1 = new StudentDetails("Ajas", 3, [23, 32, 23]);
+// let student2 = new StudentDetails("Ajnas", 6, [23, 62, 23]);
+// let student3 = new StudentDetails("Afnas", 9, [23, 42, 23]);
+// let student4 = new StudentDetails("Anfas", 12, [23, 42, 23]);
 
-let student = [student1, student2, student3, student4];
-let bestStudent = student[0];
-for (let i = 0; i < student.length; i++) {
-    if (student[i].displayStudent() > bestStudent.displayStudent()) {
-        bestStudent = student[i];
-    }
+// let student = [student1, student2, student3, student4];
+// let bestStudent = student[0];
+// for (let i = 0; i < student.length; i++) {
+//     if (student[i].displayStudent() > bestStudent.displayStudent()) {
+//         bestStudent = student[i];
+//     }
+// }
+// console.log("\ud83c\udf3f Best Student \ud83c\udf3f"); // emogy code
+// bestStudent.displayStudent();
+//ES6 Started//
+//Arrow function//
+
+function ajas(name) {
+    //this is normal function//
+    return "hello " + name;
 }
-console.log("\ud83c\udf3f Best Student \ud83c\udf3f"); // emogy code
-bestStudent.displayStudent();
+console.log(ajas("Ajas"));
+//Arrow function//
+const ajnas = (name) => {
+    return "hello " + name;
+};
+console.log(ajnas("Ajnas"));
+//short arrow function//
+const afnas = (name) => "Hello " + name;
+console.log(afnas("Afnas"));
