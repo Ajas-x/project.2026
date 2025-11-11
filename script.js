@@ -201,7 +201,6 @@
 // class Ajas {
 //     #name;
 
-
 //     constructor(age, name) {
 //         this.#name;
 //         this.age = age;
@@ -230,7 +229,6 @@
 // let user1 = new Ajas();
 // user1.setvalue("Tharajith", 36);
 // console.log(user1.getvalue());
-
 
 //Encapsulation//
 // class UserPass {
@@ -292,12 +290,12 @@
 //     sound(){
 //         console.log("this is cat sound");
 //     }
-// } 
+// }
 // let a1 =new Dog();
 // let a2 =new Cat();
 
 // a1.sound();
-// a2.sound(); 
+// a2.sound();
 
 // class Companies {
 //     subBrands() {
@@ -354,3 +352,41 @@
 // let user1 = new PaymentSystem(100);
 // user1.makePayment(300);
 // user1.getBalence();
+//my sample project//
+class PaymentSystem {
+    #balance;
+    constructor(balance) {
+        this.#balance = balance;
+        console.log("this is minimum balance");
+        console.log(this.#balance);
+        console.log("---------------------------");
+    }
+    deposit(amount) {
+        if (amount>=this.#balance) {
+            console.log("Processing payment of ₹", amount, "...");
+            console.log((this.#balance  +=amount));
+            console.log("payment successfull");
+            console.log("---------------------------");
+        }else{
+        console.log("insufficient balance");
+        }
+          
+        
+    }
+    withdraw(amount) {
+        if (amount <= this.#balance) {
+            this.#balance -= amount;
+            console.log("withdraw amount:", amount);
+        } else {
+            console.log("Insufficient balance added");
+        }
+        console.log("---------------------------------");
+    }
+    getBalance() {
+        return console.log(this.#balance);
+    }
+}
+let user1 = new PaymentSystem(1000);
+user1.deposit(10000);
+user1.withdraw(1000);
+user1.getBalance();
