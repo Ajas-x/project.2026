@@ -353,40 +353,65 @@
 // user1.makePayment(300);
 // user1.getBalence();
 //my sample project//
-class PaymentSystem {
-    #balance;
-    constructor(balance) {
-        this.#balance = balance;
-        console.log("this is minimum balance");
-        console.log(this.#balance);
-        console.log("---------------------------");
+// class PaymentSystem {
+//     #balance;
+//     constructor(balance) {
+//         this.#balance = balance;
+//         console.log("this is minimum balance");
+//         console.log(this.#balance);
+//         console.log("---------------------------");
+//     }
+//     deposit(amount) {
+//         if (amount>=this.#balance) {
+//             console.log("Processing payment of ₹", amount, "...");
+//             console.log((this.#balance  +=amount));
+//             console.log("payment successfull");
+//             console.log("---------------------------");
+//         }else{
+//         console.log("insufficient balance");
+//         }
+
+//     }
+//     withdraw(amount) {
+//         if (amount <= this.#balance) {
+//             this.#balance -= amount;
+//             console.log("withdraw amount:", amount);
+//         } else {
+//             console.log("Insufficient balance added");
+//         }
+//         console.log("---------------------------------");
+//     }
+//     getBalance() {
+//         return console.log(this.#balance);
+//     }
+// }
+// let user1 = new PaymentSystem(1000);
+// user1.deposit(10000);
+// user1.withdraw(1000);
+// user1.getBalance();
+// second project
+class StudentDetails {
+    constructor(name, rollNo, marks) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.marks = marks;
     }
-    deposit(amount) {
-        if (amount>=this.#balance) {
-            console.log("Processing payment of ₹", amount, "...");
-            console.log((this.#balance  +=amount));
-            console.log("payment successfull");
-            console.log("---------------------------");
-        }else{
-        console.log("insufficient balance");
+
+    displayStudent() {
+        console.log(this.name);
+        console.log(this.rollNo);
+        console.log(this.marks);
+        let total = 0;
+        for (let i = 0; i < this.marks.length; i++) {
+            total += this.marks[i];
         }
-          
-        
-    }
-    withdraw(amount) {
-        if (amount <= this.#balance) {
-            this.#balance -= amount;
-            console.log("withdraw amount:", amount);
-        } else {
-            console.log("Insufficient balance added");
-        }
-        console.log("---------------------------------");
-    }
-    getBalance() {
-        return console.log(this.#balance);
+        console.log(total);
     }
 }
-let user1 = new PaymentSystem(1000);
-user1.deposit(10000);
-user1.withdraw(1000);
-user1.getBalance();
+let student1 = new StudentDetails("Ajas", 3, [23, 32, 23]);
+let student2 = new StudentDetails("Ajnas",6, [23, 62, 23]);
+let student3 = new StudentDetails("Afnas",9, [23, 42, 23]);
+let student4 = new StudentDetails("Anfas",12, [23, 42, 23]);
+
+let student=[student1,student2,student3,student4];
+student.displayStudent()
