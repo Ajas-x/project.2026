@@ -409,9 +409,16 @@ class StudentDetails {
     }
 }
 let student1 = new StudentDetails("Ajas", 3, [23, 32, 23]);
-let student2 = new StudentDetails("Ajnas",6, [23, 62, 23]);
-let student3 = new StudentDetails("Afnas",9, [23, 42, 23]);
-let student4 = new StudentDetails("Anfas",12, [23, 42, 23]);
+let student2 = new StudentDetails("Ajnas", 6, [23, 62, 23]);
+let student3 = new StudentDetails("Afnas", 9, [23, 42, 23]);
+let student4 = new StudentDetails("Anfas", 12, [23, 42, 23]);
 
-let student=[student1,student2,student3,student4];
-student.displayStudent()
+let student = [student1, student2, student3, student4];
+let bestStudent = student[0];
+for (let i = 0; i < student.length; i++) {
+    if (student[i].displayStudent() > bestStudent.displayStudent()) {
+        bestStudent = student[i];
+    }
+}
+console.log("\ud83c\udf3f Best Student \ud83c\udf3f");// emogy code
+bestStudent.displayStudent();
