@@ -420,5 +420,5 @@ for (let i = 0; i < student.length; i++) {
         bestStudent = student[i];
     }
 }
-console.log("\ud83c\udf3f Best Student \ud83c\udf3f");// emogy code
+console.log("\ud83c\udf3f Best Student \ud83c\udf3f"); // emogy code
 bestStudent.displayStudent();
