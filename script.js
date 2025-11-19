@@ -425,16 +425,30 @@
 //ES6 Started//
 //Arrow function//
 
-function ajas(name) {
-    //this is normal function//
-    return "hello " + name;
-}
-console.log(ajas("Ajas"));
-//Arrow function//
-const ajnas = (name) => {
-    return "hello " + name;
-};
-console.log(ajnas("Ajnas"));
-//short arrow function//
-const afnas = (name) => "Hello " + name;
-console.log(afnas("Afnas"));
+// function ajas(name) {
+//     //this is normal function//
+//     return "hello " + name;
+// }
+// console.log(ajas("Ajas"));
+// //Arrow function//
+// const ajnas = (name) => {
+//     return "hello " + name;
+// };
+// console.log(ajnas("Ajnas"));
+// //short arrow function//
+// const afnas = (name) => "Hello " + name;
+// console.log(afnas("Afnas"));
+//Array destructuring 
+// let studnt=["Ajas","Ajnas",45];
+// let destructuringData=[name,name,age] =studnt;
+// console.log(name,name,age);
+//Object destructuring//
+// let data ={
+//     name:"Ajas",
+//     age:20,
+//     place:"kannur"
+// }
+// let destructuringObject={name:fullname,age:old,place:where}= data;
+// console.log(fullname);
+// console.log(where);
+// console.log(old);
