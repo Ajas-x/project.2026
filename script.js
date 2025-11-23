@@ -354,3 +354,26 @@
 // let user1 = new PaymentSystem(100);
 // user1.makePayment(300);
 // user1.getBalence();
+// // sample project //
+// class PaymentSystem {
+//     #balance;
+//     constructor(balance){
+//         this.#balance=balance;
+//     }
+//     deposit(amount){
+//         if(amount<=this.#balance){
+
+//             console.log("balance"+amount +"this is balance........");
+
+//         }else{
+//             console.log("insufficient balance ........");
+//         }
+//     }
+// }
+// let user1 =new PaymentSystem(1000);
+// user1.deposit(300);
+//ES6 consepts
+
+// let name;
+// name = "Ajas";
+// console.log(`hello ${name}, Welcome back!!`);
