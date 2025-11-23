@@ -377,3 +377,11 @@
 // let name;
 // name = "Ajas";
 // console.log(`hello ${name}, Welcome back!!`);
+    //Spred and rest oparetor
+let products =["ajas","Ajnas","Tharajith"];
+console.log(...products);
+    //rest oparator//
+function sample(...arg){
+    console.log(arg);
+}
+sample('ajs',34,"asjkdhff");
