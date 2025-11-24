@@ -377,11 +377,50 @@
 // let name;
 // name = "Ajas";
 // console.log(`hello ${name}, Welcome back!!`);
-    //Spred and rest oparetor
-let products =["ajas","Ajnas","Tharajith"];
-console.log(...products);
-    //rest oparator//
-function sample(...arg){
-    console.log(arg);
+//Spred and rest oparetor
+// let products =["ajas","Ajnas","Tharajith"];
+// console.log(...products);
+//     //rest oparator//
+// function sample(...arg){
+//     console.log(arg);
+// }
+// sample('ajs',34,"asjkdhff");
+class MarkAnalyzer {
+    constructor(name, mark) {
+        this.name = name;
+        this.mark = mark;
+    }
+    getTotal() {
+        let total = 0;
+        for (let i = 0; i < this.mark.length; i++) {
+            total += this.mark[i];
+        }
+        return total;
+    }
+    getAvarage() {
+        let total = this.getTotal();
+        let avarage = total / this.mark.length;
+        return avarage;
+    }
+    getHigest() {
+        let high = Math.max(...this.mark);
+        return high;
+    }
+    getLowest() {
+        let low = Math.min(...this.mark);
+        return low;
+    }
+    showReport() {
+        console.log("PRINT STUDENT DETAILS");
+        console.log(`marks:${this.mark}`);
+        console.log(`Total mark:${this.getTotal()}`);
+        console.log(`Avarage:${this.getAvarage()}`);
+        console.log(`Highest Value:${this.getHigest()}`);
+        console.log(`Lowest Value:${this.getLowest()}`);
+        console.log("............................................")
+
+    }
+
 }
-sample('ajs',34,"asjkdhff");
+let user = new MarkAnalyzer("Ajas", [34, 43, 43, 43]);
+user.showReport();
