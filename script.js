@@ -201,7 +201,6 @@
 // class Ajas {
 //     #name;
 
-
 //     constructor(age, name) {
 //         this.#name;
 //         this.age = age;
@@ -230,7 +229,6 @@
 // let user1 = new Ajas();
 // user1.setvalue("Tharajith", 36);
 // console.log(user1.getvalue());
-
 
 //Encapsulation//
 // class UserPass {
@@ -292,12 +290,12 @@
 //     sound(){
 //         console.log("this is cat sound");
 //     }
-// } 
+// }
 // let a1 =new Dog();
 // let a2 =new Cat();
 
 // a1.sound();
-// a2.sound(); 
+// a2.sound();
 
 // class Companies {
 //     subBrands() {
@@ -354,6 +352,7 @@
 // let user1 = new PaymentSystem(100);
 // user1.makePayment(300);
 // user1.getBalence();
+<<<<<<< HEAD
 // // sample project //
 // class PaymentSystem {
 //     #balance;
@@ -424,3 +423,105 @@ class MarkAnalyzer {
 }
 let user = new MarkAnalyzer("Ajas", [34, 43, 43, 43]);
 user.showReport();
+=======
+//my sample project//
+// class PaymentSystem {
+//     #balance;
+//     constructor(balance) {
+//         this.#balance = balance;
+//         console.log("this is minimum balance");
+//         console.log(this.#balance);
+//         console.log("---------------------------");
+//     }
+//     deposit(amount) {
+//         if (amount>=this.#balance) {
+//             console.log("Processing payment of ₹", amount, "...");
+//             console.log((this.#balance  +=amount));
+//             console.log("payment successfull");
+//             console.log("---------------------------");
+//         }else{
+//         console.log("insufficient balance");
+//         }
+
+//     }
+//     withdraw(amount) {
+//         if (amount <= this.#balance) {
+//             this.#balance -= amount;
+//             console.log("withdraw amount:", amount);
+//         } else {
+//             console.log("Insufficient balance added");
+//         }
+//         console.log("---------------------------------");
+//     }
+//     getBalance() {
+//         return console.log(this.#balance);
+//     }
+// }
+// let user1 = new PaymentSystem(1000);
+// user1.deposit(10000);
+// user1.withdraw(1000);
+// user1.getBalance();
+// second project
+// class StudentDetails {
+//     constructor(name, rollNo, marks) {
+//         this.name = name;
+//         this.rollNo = rollNo;
+//         this.marks = marks;
+//     }
+
+//     displayStudent() {
+//         console.log(this.name);
+//         console.log(this.rollNo);
+//         console.log(this.marks);
+//         let total = 0;
+//         for (let i = 0; i < this.marks.length; i++) {
+//             total += this.marks[i];
+//         }
+//         console.log(total);
+//     }
+// }
+// let student1 = new StudentDetails("Ajas", 3, [23, 32, 23]);
+// let student2 = new StudentDetails("Ajnas", 6, [23, 62, 23]);
+// let student3 = new StudentDetails("Afnas", 9, [23, 42, 23]);
+// let student4 = new StudentDetails("Anfas", 12, [23, 42, 23]);
+
+// let student = [student1, student2, student3, student4];
+// let bestStudent = student[0];
+// for (let i = 0; i < student.length; i++) {
+//     if (student[i].displayStudent() > bestStudent.displayStudent()) {
+//         bestStudent = student[i];
+//     }
+// }
+// console.log("\ud83c\udf3f Best Student \ud83c\udf3f"); // emogy code
+// bestStudent.displayStudent();
+//ES6 Started//
+//Arrow function//
+
+// function ajas(name) {
+//     //this is normal function//
+//     return "hello " + name;
+// }
+// console.log(ajas("Ajas"));
+// //Arrow function//
+// const ajnas = (name) => {
+//     return "hello " + name;
+// };
+// console.log(ajnas("Ajnas"));
+// //short arrow function//
+// const afnas = (name) => "Hello " + name;
+// console.log(afnas("Afnas"));
+//Array destructuring 
+// let studnt=["Ajas","Ajnas",45];
+// let destructuringData=[name,name,age] =studnt;
+// console.log(name,name,age);
+//Object destructuring//
+// let data ={
+//     name:"Ajas",
+//     age:20,
+//     place:"kannur"
+// }
+// let destructuringObject={name:fullname,age:old,place:where}= data;
+// console.log(fullname);
+// console.log(where);
+// console.log(old);
+>>>>>>> ea278937bca32502941664e733f8dcdaa9fa291e
