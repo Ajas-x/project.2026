@@ -442,13 +442,98 @@
 // let studnt=["Ajas","Ajnas",45];
 // let destructuringData=[name,name,age] =studnt;
 // console.log(name,name,age);
-//Object destructuring//
-// let data ={
+////////////////DESTRUCTURING//////////////////
+//with out destructuring//
+
+// let array =["Meta","Google","Apple"];
+// let a =array[0];
+// let b =array[2];
+// let c =array[3];
+
+//with destructuring //
+
+// let [a,b,c] =["Meta","Google","Apple"];
+// console.log(a,b,c);
+
+///Skip value in Destructuring///
+
+// let [x, ,z] =[1,2,3];
+// console.log(x,z);
+
+//Default value//
+// let [p=100,q=4434]=[50];
+// console.log(p,q);
+
+//Swap variables//
+
+// let a=20,b=30;
+// [a,b]=[b,a];
+// console.log(`Rsult is :${a}`);
+
+///////Object Destructuring////////
+
+//with out destructur//
+// let details = {
+//     name: "Ajas",
+//     age: 34
+// }
+
+//with Destructuring//
+
+// let details = {
+//     name: "Ajas", age: 34,
+// };
+// let {name,age} =details;    
+// console.log(age);
+
+//Rename variable//
+// let { name: fullname, age: old } = { name: "Ajas", age: 43 };
+// console.log(fullname, old);
+
+//Default  values//
+// let { name, age = 18 } = { name: "Ajas" };
+// console.log(name, age);
+
+//Nested Destructuring//
+// let student = {
+//     name: "Ajas",
+//     mark: { math: 3, english: 34 }
+// }
+// let { mark: { math: m, english: e } } = student;
+// console.log(e,m);
+
+//Destructuring in Function//
+// function details({ name, age }) {
+//     console.log(name, age);
+
+// }
+// details({ name: "Ajas", age: 34 });
+
+//Array destructuring in functino//
+
+// function show([a,b]){
+//     console.log(a,b);
+// }
+// show([34,35])
+
+//Destructuring in ...Rest operator//
+
+//ARRAY//
+// let [a,b,...rest] =[10,20,30,40];
+// console.log(rest);
+
+//OBJECT//
+
+// let {name,...other}={
 //     name:"Ajas",
-//     age:20,
+//     age:34,
 //     place:"kannur"
 // }
-// let destructuringObject={name:fullname,age:old,place:where}= data;
-// console.log(fullname);
-// console.log(where);
-// console.log(old);
+// console.log(other);
+
+// spread and rest operator//
+
+//  Spread with array //
+let a = [10, 20, 30];
+let b = [...a];
+console.log(b);
