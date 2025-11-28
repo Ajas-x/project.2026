@@ -534,6 +534,23 @@
 // spread and rest operator//
 
 //  Spread with array //
-let a = [10, 20, 30];
-let b = [...a];
-console.log(b);
+// let a = [10, 20, 30];
+// let b = [...a];
+// console.log(b);
+//  merge arrays  //
+// let a = [1,2];
+// let b = [3,4];
+
+// let c = [...a, ...b];
+// console.log(c);
+
+// Add extra value //
+
+// let a =[1,2];
+// let b=[...a,"Ajas","Ajnas"];
+// console.log(b);
+
+// spread with string //
+
+const a = "AJAS";
+console.log(...a)
