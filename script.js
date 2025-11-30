@@ -452,3 +452,13 @@
 // console.log(fullname);
 // console.log(where);
 // console.log(old);
+let user = {
+    name: "Ajas",
+    age: 20,
+    place: "Kannur",
+};
+
+let {
+    age, ...others
+}=user;
+console.log(others);
