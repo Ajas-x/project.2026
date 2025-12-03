@@ -552,5 +552,76 @@
 
 // spread with string //
 
-const a = "AJAS";
-console.log(...a)
+// const a = "AJAS";
+// console.log(...a);
+
+//Copy object//
+// let x ={
+//     companyName:"Grok",
+//     founder:"Elon musk",
+//     foundedDate:2023
+//     }
+//     let ajas={...x,};
+//     console.log(ajas);
+//     //Update Object with spread operator//
+// ajas={
+//     ...x,shareHolder:"Ajas"
+// }
+// console.log(ajas);
+//Merge with object//
+// let google={
+//     product:"Gemini",
+//     date:2023,
+// }
+// let tesla={
+//     catogary:"auto Ai",
+// }
+// let assumbleBrands={
+//     ...tesla,...google,
+// }
+// console.log(assumbleBrands);
+
+// Spread in function //
+
+// let nums = [1.9,40,20];
+// console.log(Math.round(...nums));
+
+//Real life example//
+// let oldProduct =["shirt","shoe"];
+// let newProduct =["hoody"];
+
+// let Update =[...oldProduct,...newProduct];
+
+// console.log(Update);
+
+//////////////////// MAP /////////////////////
+///MAP OF STRING ///
+// let startUp=["zomato","Uber","clawer"];
+//     let upper =startUp.map(n=>n.toUpperCase());
+//     console.log(upper);
+
+/// MAP OF NUMBERS ///
+// let num=[20,30,44];
+// let nub = num.map(n=>n*2);
+// console.log(nub);
+
+///ARRAY OF OBJECT IN MAP///
+// let companys = [
+//     { name: 'Meta', catogory: "Social network" },
+//     { name: "Google", catogory: "search engine" }
+// ];
+// let details = companys.map(n => n.name);
+// console.log(details);
+/// Map() Never changes orgianl array ///
+
+// let a =[10,20,30];
+// let b = a.map(n=> n+1);
+//  console.log(a);
+//  console.log(b);
+
+// practice project//
+
+let marks =[10,20,30,40,50];
+let mergeMark= marks.map(n=>n+5);
+console.log(`marks:${marks}`);
+console.log(`mark plus five:${mergeMark}`);
