@@ -621,7 +621,14 @@
 
 // practice project//
 
-let marks =[10,20,30,40,50];
-let mergeMark= marks.map(n=>n+5);
-console.log(`marks:${marks}`);
-console.log(`mark plus five:${mergeMark}`);
+// let marks = [10, 20, 30, 40, 50];
+// let addedMarks = marks.map(adding => adding + 5);
+// console.log(addedMarks);
+// console.log(marks);
+
+///////Filter()/////////
+
+// let marks =[10,20,30,366,50,60];
+// let filteredValue =marks.filter(value=> value>365);
+// console.log(filteredValue);
+
