@@ -632,3 +632,30 @@
 // console.log(fData);
 // console.log(data);
 
+////////even numbers filter()////
+
+// let nums =[1,2,3,4,5,6,7,8,9];
+// let fNums =nums.filter(n=>n % 2==0);
+// console.log(fNums);
+
+///////String filtering()///////////
+
+// let names =["Ajas","Ajnas","Afnas","Tharajith"];
+// let fNames =names.filter(a=>a.endsWith("h"));
+// console.log(fNames);    
+
+////////Array of object with filter()//////////////////
+
+// let companies =[
+//     {name:"Tesla",foundedBy:"Elon musk",rating:90},
+//     {name:"Google",foundedBy:"Larry page and Sergey Brin",rating:80},
+//     {name:"Meta",foundedBy:"Mark Zukerberg",rating:75}
+// ];
+// let fCompanies =companies.filter(a=>a.rating>76);
+// console.log(fCompanies);
+
+////////////////practice of filter()////////
+
+// let numbers=[10,30,20,40,60,80,35];
+// let fnumbers=numbers.filter(filteredValue=> filteredValue>=40);
+// console.log(fnumbers);
