@@ -626,3 +626,9 @@
 // console.log(addedMarks);
 // console.log(marks);
 
+///////Filter()/////////
+// let data=[10,20,30,40,50];
+// let fData = data.filter(a=>a>=20);
+// console.log(fData);
+// console.log(data);
+
