@@ -438,7 +438,7 @@
 // //short arrow function//
 // const afnas = (name) => "Hello " + name;
 // console.log(afnas("Afnas"));
-//Array destructuring 
+//Array destructuring
 // let studnt=["Ajas","Ajnas",45];
 // let destructuringData=[name,name,age] =studnt;
 // console.log(name,name,age);
@@ -483,7 +483,7 @@
 // let details = {
 //     name: "Ajas", age: 34,
 // };
-// let {name,age} =details;    
+// let {name,age} =details;
 // console.log(age);
 
 //Rename variable//
@@ -625,10 +625,4 @@
 // let addedMarks = marks.map(adding => adding + 5);
 // console.log(addedMarks);
 // console.log(marks);
-
-///////Filter()/////////
-
-// let marks =[10,20,30,366,50,60];
-// let filteredValue =marks.filter(value=> value>365);
-// console.log(filteredValue);
 
