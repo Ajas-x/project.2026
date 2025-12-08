@@ -659,3 +659,5 @@
 // let numbers=[10,30,20,40,60,80,35];
 // let fnumbers=numbers.filter(filteredValue=> filteredValue>=40);
 // console.log(fnumbers);
+
+/////// reduce() operator /////////
