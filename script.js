@@ -438,27 +438,248 @@
 // //short arrow function//
 // const afnas = (name) => "Hello " + name;
 // console.log(afnas("Afnas"));
-//Array destructuring 
+//Array destructuring
 // let studnt=["Ajas","Ajnas",45];
 // let destructuringData=[name,name,age] =studnt;
 // console.log(name,name,age);
-//Object destructuring//
-// let data ={
+////////////////DESTRUCTURING//////////////////
+//with out destructuring//
+
+// let array =["Meta","Google","Apple"];
+// let a =array[0];
+// let b =array[2];
+// let c =array[3];
+
+//with destructuring //
+
+// let [a,b,c] =["Meta","Google","Apple"];
+// console.log(a,b,c);
+
+///Skip value in Destructuring///
+
+// let [x, ,z] =[1,2,3];
+// console.log(x,z);
+
+//Default value//
+// let [p=100,q=4434]=[50];
+// console.log(p,q);
+
+//Swap variables//
+
+// let a=20,b=30;
+// [a,b]=[b,a];
+// console.log(`Rsult is :${a}`);
+
+///////Object Destructuring////////
+
+//with out destructur//
+// let details = {
+//     name: "Ajas",
+//     age: 34
+// }
+
+//with Destructuring//
+
+// let details = {
+//     name: "Ajas", age: 34,
+// };
+// let {name,age} =details;
+// console.log(age);
+
+//Rename variable//
+// let { name: fullname, age: old } = { name: "Ajas", age: 43 };
+// console.log(fullname, old);
+
+//Default  values//
+// let { name, age = 18 } = { name: "Ajas" };
+// console.log(name, age);
+
+//Nested Destructuring//
+// let student = {
+//     name: "Ajas",
+//     mark: { math: 3, english: 34 }
+// }
+// let { mark: { math: m, english: e } } = student;
+// console.log(e,m);
+
+//Destructuring in Function//
+// function details({ name, age }) {
+//     console.log(name, age);
+
+// }
+// details({ name: "Ajas", age: 34 });
+
+//Array destructuring in functino//
+
+// function show([a,b]){
+//     console.log(a,b);
+// }
+// show([34,35])
+
+//Destructuring in ...Rest operator//
+
+//ARRAY//
+// let [a,b,...rest] =[10,20,30,40];
+// console.log(rest);
+
+//OBJECT//
+
+// let {name,...other}={
 //     name:"Ajas",
-//     age:20,
+//     age:34,
 //     place:"kannur"
 // }
+
 // let destructuringObject={name:fullname,age:old,place:where}= data;
 // console.log(fullname);
 // console.log(where);
 // console.log(old);
-let user = {
-    name: "Ajas",
-    age: 20,
-    place: "Kannur",
-};
+// let user = {
+//     name: "Ajas",
+//     age: 20,
+//     place: "Kannur",
+// };
 
-let {
-    age, ...others
-}=user;
-console.log(others);
+// let {
+//     age, ...others
+// }=user;
+// console.log(others);
+
+// console.log(other);
+
+// spread and rest operator//
+
+//  Spread with array //
+// let a = [10, 20, 30];
+// let b = [...a];
+// console.log(b);
+//  merge arrays  //
+// let a = [1,2];
+// let b = [3,4];
+
+// let c = [...a, ...b];
+// console.log(c);
+
+// Add extra value //
+
+// let a =[1,2];
+// let b=[...a,"Ajas","Ajnas"];
+// console.log(b);
+
+// spread with string //
+
+// const a = "AJAS";
+// console.log(...a);
+
+//Copy object//
+// let x ={
+//     companyName:"Grok",
+//     founder:"Elon musk",
+//     foundedDate:2023
+//     }
+//     let ajas={...x,};
+//     console.log(ajas);
+//     //Update Object with spread operator//
+// ajas={
+//     ...x,shareHolder:"Ajas"
+// }
+// console.log(ajas);
+//Merge with object//
+// let google={
+//     product:"Gemini",
+//     date:2023,
+// }
+// let tesla={
+//     catogary:"auto Ai",
+// }
+// let assumbleBrands={
+//     ...tesla,...google,
+// }
+// console.log(assumbleBrands);
+
+// Spread in function //
+
+// let nums = [1.9,40,20];
+// console.log(Math.round(...nums));
+
+//Real life example//
+// let oldProduct =["shirt","shoe"];
+// let newProduct =["hoody"];
+
+// let Update =[...oldProduct,...newProduct];
+
+// console.log(Update);
+
+//////////////////// MAP /////////////////////
+///MAP OF STRING ///
+// let startUp=["zomato","Uber","clawer"];
+//     let upper =startUp.map(n=>n.toUpperCase());
+//     console.log(upper);
+
+/// MAP OF NUMBERS ///
+// let num=[20,30,44];
+// let nub = num.map(n=>n*2);
+// console.log(nub);
+
+///ARRAY OF OBJECT IN MAP///
+// let companys = [
+//     { name: 'Meta', catogory: "Social network" },
+//     { name: "Google", catogory: "search engine" }
+// ];
+// let details = companys.map(n => n.name);
+// console.log(details);
+/// Map() Never changes orgianl array ///
+
+// let a =[10,20,30];
+// let b = a.map(n=> n+1);
+//  console.log(a);
+//  console.log(b);
+
+// practice project//
+
+// let marks = [10, 20, 30, 40, 50];
+// let addedMarks = marks.map(adding => adding + 5);
+// console.log(addedMarks);
+// console.log(marks);
+
+///////Filter()/////////
+// let data=[10,20,30,40,50];
+// let fData = data.filter(a=>a>=20);
+// console.log(fData);
+// console.log(data);
+
+////////even numbers filter()////
+
+// let nums =[1,2,3,4,5,6,7,8,9];
+// let fNums =nums.filter(n=>n % 2==0);
+// console.log(fNums);
+
+///////String filtering()///////////
+
+// let names =["Ajas","Ajnas","Afnas","Tharajith"];
+// let fNames =names.filter(a=>a.endsWith("h"));
+// console.log(fNames);
+
+////////Array of object with filter()//////////////////
+
+// let companies =[
+//     {name:"Tesla",foundedBy:"Elon musk",rating:90},
+//     {name:"Google",foundedBy:"Larry page and Sergey Brin",rating:80},
+//     {name:"Meta",foundedBy:"Mark Zukerberg",rating:75}
+// ];
+// let fCompanies =companies.filter(a=>a.rating>76);
+// console.log(fCompanies);
+
+////////////////practice of filter()////////
+
+// let numbers=[10,30,20,40,60,80,35];
+// let fnumbers=numbers.filter(filteredValue=> filteredValue>=40);
+// console.log(fnumbers);
+
+/////// reduce() operator /////////
+let arr = [1, 2, 3, 4, 5, 6];
+const reduced = arr.reduce((accumulated, currentvalue) => {
+    console.log(`acc:${accumulated} curr:${currentvalue}`);
+    return accumulated += currentvalue;
+}, 0);
+console.log(reduced);
