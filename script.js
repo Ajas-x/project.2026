@@ -677,9 +677,54 @@
 // console.log(fnumbers);
 
 /////// reduce() operator /////////
-let arr = [1, 2, 3, 4, 5, 6];
-const reduced = arr.reduce((accumulated, currentvalue) => {
-    console.log(`acc:${accumulated} curr:${currentvalue}`);
-    return accumulated += currentvalue;
-}, 0);
-console.log(reduced);
+// const data = [10, 20, 30, 40, 50];
+// const reducedData = data.reduce((accumulatedValue, currrentvalue) => {
+//     console.log(`accumulated:${accumulatedValue} currentValue:${currrentvalue}`);    
+//     return accumulatedValue + currrentvalue;
+// }, 0);
+// console.log(reducedData);
+
+/////// reduce() project ////////
+// let nums = [10, 20, 30];
+
+// let result = nums.reduce((acc, crr) => {
+//         printdetails= acc+crr;
+//         return printdetails;
+// });
+// console.log(result);
+//////////////////find()////////////////
+// let num =[10,20,30];
+// let result = num.find((n)=>{
+//         return n > 23;
+// });
+// console.log(result);
+
+//////////// Practice of Find()///////////////
+
+// let obj = [
+//         { name: "Ajas", mark: 80 },
+//         { name: 'Ajnas', mark: 35 },
+// ];
+// let result = obj.find((n)=>{
+//         return n.mark < 40;
+// });
+// console.log(result)
+
+//////////////Some()/////////////////
+
+// let number = [1,3,5,7];
+
+// let result = number.some((s)=>{
+//         return s % 2==0;
+// });
+// console.log(result);
+
+///////////////every()/////////////////
+
+// let marks = [45, 55, 65];
+
+// let result =marks.every((e)=>{
+//         return e >= 40;
+
+// });
+// console.log(result);
